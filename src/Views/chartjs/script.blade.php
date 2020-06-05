@@ -4,7 +4,7 @@
 @endforeach
 
 <script {!! $chart->displayScriptAttributes() !!}>
-    var ctvChart = document.getElementById('{{ $chart->id }}').getContext('2d');
+    //var ctvChart = document.getElementById('{{ $chart->id }}').getContext('2d');
     function {{ $chart->id }}_create(data) {
         {{ $chart->id }}_rendered = true;
         document.getElementById("{{ $chart->id }}_loader").style.display = 'none';
